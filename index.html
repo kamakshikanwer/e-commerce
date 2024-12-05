@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static E-commerce Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <h1>Trends</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span id="cart-count">0</span> 🛒
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Banner Section -->
+    <div class="H">
+        <img src="rzlky_512.webp" alt="Trendy Banner" class="banner-img">
+        <h1 class="a">Super Value Deals Of All Products</h1>
+    </div>
+
+    <!-- Main Content: Product List -->
+    <main>
+        <section id="products" class="product-list">
+            <div class="product">
+                <a href="https://www.mirraw.com/designers/meghalya/designs/designer-flower-printed-embroidery-work-lehenga-choli-for-women--400fb5f5-81d8-4096-b87b-a3628fe41690">
+                    <img src="VD3-355_(2)_zoom.jpeg" alt="Product 1">
+                </a>
+                <h3>Product 1</h3>
+                <p>$17.99</p>
+                <button onclick="addToCart('Product 1', 17.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <!-- Wrap both the image and the title inside the <a> tag -->
+                <a href="https://www.meesho.com/women-crop-sweatshirt/p/5dxw2l">
+                    <img src="te.webp" alt="Product 2">
+                    <h3>Product 2</h3>
+                </a>
+                <p>$17.99</p>
+                <button onclick="addToCart('Product 1', 17.99)">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <a href="https://www.flipkart.com/sheldrom-mart-embellished-bollywood-georgette-saree/p/itm88ac8d9a877aa?pid=SARH2QHEKGZVHQGG&lid=LSTSARH2QHEKGZVHQGGSWSMI6&marketplace=FLIPKART&q=saree&store=clo%2F8on%2Fzpd%2F9og&spotlightTagId=BestsellerId_clo%2F8on%2Fzpd%2F9og&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_6_na_na_na&fm=search-autosuggest&iid=559844ab-3f87-49f6-b60f-542732a373b3.SARH2QHEKGZVHQGG.SEARCH&ppt=sp&ppn=sp&ssid=cmb162dink0000001732966551639&qH=3a4bc565a4835306">
+                    
+                    <img src="free-2-star-sheldrom-mart-unstitched-original-imah2qhc5xjmw3su.webp" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$7.00</p>
+                </a>
+                
+                <!-- Add to Cart Button -->
+                <button onclick="addToCart('Product 3', 7.00)">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <a href="https://www.meesho.com/fancy-white-kurti/p/6rlh5l">
+                <img src="de.webp" alt="Product 4">
+            </a>
+                <h3>Product 4</h3>
+                <p>$3.99</p>
+                <button onclick="addToCart('Product 4', 3.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.flipkart.com/puma-carina-slim-perf-sneakers-women/p/itm5ed54f51d3ecf?pid=SHOGTR3GGNK5XGE8&lid=LSTSHOGTR3GGNK5XGE8GAFORJ&marketplace=FLIPKART&q=shoes+for+women&store=osp%2Fiko&srno=s_1_34&otracker=search&otracker1=search&fm=Search&iid=82f1a412-8d16-4866-97e5-005cede2c198.SHOGTR3GGNK5XGE8.SEARCH&ppt=sp&ppn=sp&ssid=dq4yd0d45c0000001732967287439&qH=55b04c4193073c9e">
+                <img src="-original-imah4zh49dgaybb5.webp" alt="Product 5">
+                </a>
+                <h3>Product 5</h3>
+                <p>$9.99</p>
+                <button onclick="addToCart('Product 5', 9.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+            <a href="https://www.flipkart.com/deals4you-running-shoes-women/p/itme467b014f930d?pid=SHOH2Z75CEYCB79J&lid=LSTSHOH2Z75CEYCB79J1Y85FE&marketplace=FLIPKART&q=shoes+for+women&store=osp%2Fiko&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=en_SJFlUMSdDNqRJNa6gK0t0RUoJ17LIENoLRLK325K272dZdUPzfD1D9_z_vINBYMLLHRAmtFPqjNROATNECPITA%3D%3D&ppt=sp&ppn=sp&qH=55b04c4193073c9e">
+                <img src="5-cnv6052-vendoz-white-original-imagye5dzh4mgzaj.webp" alt="Product 6">
+</a>
+                <h3>Product 6</h3>
+                <p>$5.99</p>
+                <button onclick="addToCart('Product 6', 5.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/golden-shoes-for-girls/p/79bg4q">
+                <img src="6-kt-201-6-knoos-white-original-imahyg5mgwusqpgx.webp" alt="Product 7">
+            </a>
+                <h3>Product 7</h3>
+                <p>$3.99</p>
+                <button onclick="addToCart('Product 7', 3.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.flipkart.com/thrillz-heavenly-earring-women-combo-jhumki-crafted-girl-pair-6-brass-drops-danglers/p/itm4a63b61434b2d?pid=ERGH4DETEMJAH7ZG&lid=LSTERGH4DETEMJAH7ZGAQWQ4C&marketplace=FLIPKART&q=earrings+for+women+traditional+6+combo&store=mcr%2F96v%2Fk9d&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=d99ae2de-644b-4d2d-8f06-2231a454ea13.ERGH4DETEMJAH7ZG.SEARCH&ppt=sp&ppn=sp&ssid=v4r0vu1h740000001732967947369&qH=7cf8c58e21d1e4b1">
+                <img src="na-f48-janki-creation-original-imahf2j8wfhgjubd.webp" alt="Product 8">
+                <a></a>
+                <h3>Product 8</h3>
+                <p>$2.99</p>
+                <button onclick="addToCart('Product 8', 2.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="t.webp" alt="Product 9">
+                <h3>Product 9</h3>
+                <p>$5.00</p>
+                <button onclick="addToCart('Product 9', 5.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="2.webp" alt="Product 10">
+                <h3>Product 10</h3>
+                <p>$3.99</p>
+                <button onclick="addToCart('Product 10', 3.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/stylish-organza-embroidered-unstitched-suit-with-dupatta-set-for-women-pink-suit-material-salwar-suit-fabric-party-wedding-wear-suit-material-ethnic-clothing-for-girls/p/3bugxc">
+                <img src="fj2ah_512.webp" alt="Product 11"></a>
+                <h3>Product 11</h3>
+                <p>$2.99</p>
+                <button onclick="addToCart('Product 11', 2.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="pmzxj_400.webp" alt="Product 12">
+                <h3>Product 12</h3>
+                <p>$9.88</p>
+                <button onclick="addToCart('Product 12', 9.88)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/women-long-sleeves-t-shirt-full-sleeves-women-wear-all-season/p/6w51tj">
+                <img src="453.webp" alt="Product 13"></a>
+                <h3>Product 13</h3>
+                <p>$6.00</p>
+                <button onclick="addToCart('Product 13', 6.00)">Add to Cart</button>
+            
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/stylish-oversized-tshirt-for-women/p/6as33j">
+                <img src="s7xsm_400.webp" alt="Product 14"></a>
+                <h3>Product 14</h3>
+                <p>$5.28</p>
+                <button onclick="addToCart('Product 14', 5.28)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/fleksy-tshirt/p/249fxx">
+                <img src="a2q6x_400.webp" alt="Product 15"></a>
+                <h3>Product 15</h3>
+                <p>$3.97</p>
+                <button onclick="addToCart('Product 15', 3.97)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <a href="https://www.meesho.com/printed-elegant-short-sleeve-round-neck-t-shirt-for-women-and-girls/p/4gssht">
+                <img src="123.webp" alt="Product 16"></a>
+                <h3>Product 16</h3>
+                <p>$4.65</p>
+                <button onclick="addToCart('Product 16', 4.65)">Add to Cart</button>
+            </div>
+        </section>
+
+   <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? We're here to help!</p>
+    
+    <!-- Contact Form -->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <p><strong>Email:</strong>kamakshi24@navgurukul.org</p>
+        <p><strong>Phone:</strong>9865545734</p>
+    </div>
+</section>
+</main>
+    <footer>
+        <p>&copy; 2024 Trends. All Rights Reserved.</p>
+        
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        let cartCount = 0;
+
+        function addToCart(productName, productPrice) {
+            cartCount++;
+            document.getElementById('cart-count').textContent = cartCount;
+            alert(`${productName} has been added to your cart for $${productPrice.toFixed(2)}`);
+        }
+
+        function toggleCart() {
+            alert(`You have ${cartCount} items in your cart.`);
+        }
+    </script>
+</body>
+</html>
